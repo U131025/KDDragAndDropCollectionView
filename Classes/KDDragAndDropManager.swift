@@ -165,7 +165,7 @@ public class KDDragAndDropManager: NSObject, UIGestureRecognizerDelegate {
                 
                 let overlappingAreaCurrent = bundle.representationImageView.frame.intersection(viewFrameOnCanvas).area
                 
-                if overlappingAreaCurrent > overlappingAreaMAX {
+                if overlappingAreaCurrent >= overlappingAreaMAX {
                     
                     overlappingAreaMAX = overlappingAreaCurrent
                     
